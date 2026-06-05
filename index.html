@@ -1,110 +1,186 @@
+Year 7 checklist, search, dark mode, and mobile-friendly formatting. Please try again in a little while.
+
+Just create a website including all 5 units
+
+Here's a complete website template structure containing all 5 units with Chinese, Pinyin, and English columns. Save this as index.html and upload it to GitHub Pages.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Year 8 Chinese Vocabulary</title>
+<title>Year 8 Chinese Revision</title>
+
 <style>
-body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-h1, h2 { color: #333; }
-section { margin-bottom: 25px; }
-ul { margin-top: 5px; }
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    line-height:1.6;
+}
+
+h1,h2{
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:30px;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:8px;
+    text-align:left;
+}
+
+th{
+    background:#f0f0f0;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark table{
+    color:white;
+}
+
+.dark th{
+    background:#333;
+}
 </style>
 </head>
+
 <body>
-<h1>Year 8 Chinese Vocabulary – Consolidated Document</h1>
 
-<section>
+<h1>Year 8 Chinese Revision Website</h1>
+
+<input type="text" id="search" placeholder="Search vocabulary...">
+
+<button onclick="toggleDarkMode()">Dark Mode</button>
+
 <h2>Unit 1 – Chinese Zodiacs and Animals</h2>
-<ul>
-<li>属 (shǔ) – Zodiac belongs</li>
-<li>鼠 – Rat</li>
-<li>牛 – Ox</li>
-<li>虎 – Tiger</li>
-<li>兔子 – Rabbit</li>
-<li>龙 – Dragon</li>
-<li>蛇 – Snake</li>
-<li>马 – Horse</li>
-<li>羊 – Sheep</li>
-<li>猴 – Monkey</li>
-<li>鸡 – Rooster</li>
-<li>狗 – Dog</li>
-<li>猪 – Pig</li>
-<li>熊猫 – Panda</li>
-<li>鱼 – Fish</li>
-<li>猫 – Cat</li>
-</ul>
-</section>
+<table class="vocab">
+<tr><th>Chinese</th><th>Pinyin</th><th>English</th></tr>
+<tr><td>属</td><td>shǔ</td><td>Zodiac belongs</td></tr>
+<tr><td>鼠</td><td>lǎo shǔ</td><td>Rat</td></tr>
+<tr><td>牛</td><td>niú</td><td>Ox</td></tr>
+<tr><td>虎</td><td>lǎo hǔ</td><td>Tiger</td></tr>
+<tr><td>兔子</td><td>tù zi</td><td>Rabbit</td></tr>
+<tr><td>龙</td><td>lóng</td><td>Dragon</td></tr>
+<tr><td>蛇</td><td>shé</td><td>Snake</td></tr>
+<tr><td>马</td><td>mǎ</td><td>Horse</td></tr>
+<tr><td>羊</td><td>yáng</td><td>Sheep</td></tr>
+<tr><td>猴</td><td>hóu</td><td>Monkey</td></tr>
+<tr><td>鸡</td><td>jī</td><td>Rooster</td></tr>
+<tr><td>狗</td><td>gǒu</td><td>Dog</td></tr>
+<tr><td>猪</td><td>zhū</td><td>Pig</td></tr>
+<tr><td>熊猫</td><td>xióng māo</td><td>Panda</td></tr>
+<tr><td>鱼</td><td>yú</td><td>Fish</td></tr>
+<tr><td>猫</td><td>māo</td><td>Cat</td></tr>
+</table>
 
-<section>
 <h2>Unit 2 – Time and Date</h2>
-<ul>
-<li>年 – Year</li>
-<li>月 – Month</li>
-<li>日 / 号 – Day / Date</li>
-<li>星期 – Week</li>
-<li>今天 – Today</li>
-<li>明天 – Tomorrow</li>
-<li>昨天 – Yesterday</li>
-<li>今年 – This year</li>
-<li>明年 – Next year</li>
-<li>这个月 – This month</li>
-<li>下个月 – Next month</li>
-<li>生日 – Birthday</li>
-<li>点 – O’clock</li>
-<li>分 – Minutes</li>
-</ul>
-</section>
+<table class="vocab">
+<tr><th>Chinese</th><th>Pinyin</th><th>English</th></tr>
+<tr><td>年</td><td>nián</td><td>Year</td></tr>
+<tr><td>月</td><td>yuè</td><td>Month</td></tr>
+<tr><td>日 / 号</td><td>rì / hào</td><td>Date</td></tr>
+<tr><td>星期</td><td>xīng qī</td><td>Week</td></tr>
+<tr><td>今天</td><td>jīn tiān</td><td>Today</td></tr>
+<tr><td>明天</td><td>míng tiān</td><td>Tomorrow</td></tr>
+<tr><td>昨天</td><td>zuó tiān</td><td>Yesterday</td></tr>
+<tr><td>今年</td><td>jīn nián</td><td>This year</td></tr>
+<tr><td>明年</td><td>míng nián</td><td>Next year</td></tr>
+<tr><td>这个月</td><td>zhè gè yuè</td><td>This month</td></tr>
+<tr><td>下个月</td><td>xià gè yuè</td><td>Next month</td></tr>
+<tr><td>生日</td><td>shēng rì</td><td>Birthday</td></tr>
+<tr><td>点</td><td>diǎn</td><td>O'clock</td></tr>
+<tr><td>分</td><td>fēn</td><td>Minutes</td></tr>
+</table>
 
-<section>
 <h2>Unit 3 – Body Parts</h2>
-<ul>
-<li>头 – Head</li>
-<li>头发 – Hair</li>
-<li>眼睛 – Eyes</li>
-<li>鼻子 – Nose</li>
-<li>嘴巴 – Mouth</li>
-<li>耳朵 – Ears</li>
-<li>肚子 – Belly</li>
-<li>手 – Hands</li>
-<li>腿 – Legs</li>
-<li>脚 – Feet</li>
-</ul>
-</section>
+<table class="vocab">
+<tr><th>Chinese</th><th>Pinyin</th><th>English</th></tr>
+<tr><td>头</td><td>tóu</td><td>Head</td></tr>
+<tr><td>头发</td><td>tóu fà</td><td>Hair</td></tr>
+<tr><td>眼睛</td><td>yǎn jing</td><td>Eyes</td></tr>
+<tr><td>鼻子</td><td>bí zi</td><td>Nose</td></tr>
+<tr><td>嘴巴</td><td>zuǐ ba</td><td>Mouth</td></tr>
+<tr><td>耳朵</td><td>ěr duo</td><td>Ears</td></tr>
+<tr><td>肚子</td><td>dù zi</td><td>Belly</td></tr>
+<tr><td>手</td><td>shǒu</td><td>Hands</td></tr>
+<tr><td>腿</td><td>tuǐ</td><td>Legs</td></tr>
+<tr><td>脚</td><td>jiǎo</td><td>Feet</td></tr>
+</table>
 
-<section>
 <h2>Unit 4 – Rooms and Directions</h2>
-<ul>
-<li>房子 – House</li>
-<li>卧室 – Bedroom</li>
-<li>厨房 – Kitchen</li>
-<li>饭厅 – Dining Room</li>
-<li>客厅 – Living Room</li>
-<li>厕所 – Toilet</li>
-<li>浴室 – Bathroom</li>
-<li>车库 – Garage</li>
-<li>书房 – Study</li>
-<li>游泳池 – Swimming Pool</li>
-<li>洗衣房 – Laundry</li>
-</ul>
-</section>
+<table class="vocab">
+<tr><th>Chinese</th><th>Pinyin</th><th>English</th></tr>
+<tr><td>房子</td><td>fáng zi</td><td>House</td></tr>
+<tr><td>卧室</td><td>wò shì</td><td>Bedroom</td></tr>
+<tr><td>厨房</td><td>chú fáng</td><td>Kitchen</td></tr>
+<tr><td>饭厅</td><td>fàn tīng</td><td>Dining Room</td></tr>
+<tr><td>客厅</td><td>kè tīng</td><td>Living Room</td></tr>
+<tr><td>厕所</td><td>cè suǒ</td><td>Toilet</td></tr>
+<tr><td>浴室</td><td>yù shì</td><td>Bathroom</td></tr>
+<tr><td>车库</td><td>chē kù</td><td>Garage</td></tr>
+<tr><td>书房</td><td>shū fáng</td><td>Study</td></tr>
+<tr><td>游泳池</td><td>yóu yǒng chí</td><td>Swimming Pool</td></tr>
+<tr><td>洗衣房</td><td>xǐ yī fáng</td><td>Laundry</td></tr>
+<tr><td>前面</td><td>qián mian</td><td>Front</td></tr>
+<tr><td>后面</td><td>hòu mian</td><td>Back</td></tr>
+<tr><td>左边</td><td>zuǒ bian</td><td>Left</td></tr>
+<tr><td>右边</td><td>yòu bian</td><td>Right</td></tr>
+<tr><td>上边</td><td>shàng bian</td><td>Up</td></tr>
+<tr><td>下边</td><td>xià bian</td><td>Down</td></tr>
+<tr><td>中间</td><td>zhōng jiān</td><td>Middle</td></tr>
+<tr><td>在</td><td>zài</td><td>Located at</td></tr>
+</table>
 
-<section>
 <h2>Unit 5 – Colours</h2>
-<ul>
-<li>红色 – Red</li>
-<li>橙色 – Orange</li>
-<li>黄色 – Yellow</li>
-<li>绿色 – Green</li>
-<li>蓝色 – Blue</li>
-<li>紫色 – Purple</li>
-<li>粉红色 – Pink</li>
-<li>黑色 – Black</li>
-<li>白色 – White</li>
-<li>咖啡色 – Brown</li>
-<li>灰色 – Grey</li>
-</ul>
-</section>
+<table class="vocab">
+<tr><th>Chinese</th><th>Pinyin</th><th>English</th></tr>
+<tr><td>颜色</td><td>yán sè</td><td>Colour</td></tr>
+<tr><td>彩色</td><td>cǎi sè</td><td>Multicolour</td></tr>
+<tr><td>红色</td><td>hóng sè</td><td>Red</td></tr>
+<tr><td>橙色</td><td>chéng sè</td><td>Orange</td></tr>
+<tr><td>黄色</td><td>huáng sè</td><td>Yellow</td></tr>
+<tr><td>绿色</td><td>lǜ sè</td><td>Green</td></tr>
+<tr><td>青色</td><td>qīng sè</td><td>Light Green</td></tr>
+<tr><td>蓝色</td><td>lán sè</td><td>Blue</td></tr>
+<tr><td>紫色</td><td>zǐ sè</td><td>Purple</td></tr>
+<tr><td>粉红色</td><td>fěn hóng sè</td><td>Pink</td></tr>
+<tr><td>黑色</td><td>hēi sè</td><td>Black</td></tr>
+<tr><td>白色</td><td>bái sè</td><td>White</td></tr>
+<tr><td>咖啡色</td><td>kā fēi sè</td><td>Brown</td></tr>
+<tr><td>灰色</td><td>huī sè</td><td>Grey</td></tr>
+</table>
+
+<script>
+function toggleDarkMode(){
+    document.body.classList.toggle("dark");
+}
+
+document.getElementById("search").addEventListener("keyup", function(){
+    let filter = this.value.toLowerCase();
+
+    document.querySelectorAll("table.vocab tr").forEach((row,index)=>{
+        if(index===0) return;
+
+        let text = row.innerText.toLowerCase();
+        row.style.display = text.includes(filter) ? "" : "none";
+    });
+});
+</script>
 
 </body>
 </html>
